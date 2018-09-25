@@ -128,5 +128,10 @@
       }
     }
   },
-  "defaultProject": "siteRc"
+  "defaultProject": "siteRc",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
