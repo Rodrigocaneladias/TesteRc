@@ -1,0 +1,10 @@
+@import '../../common/colors.scss';
+
+.menu{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.selected{
+    background-color: $cinza-2;
+}

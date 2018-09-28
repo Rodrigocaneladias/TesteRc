@@ -1,0 +1,23 @@
+@import '../common/colors.scss';
+
+.conteudo{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.menu-catalogo{
+    padding-right: 0;
+    padding-left: 0;
+    background-color: $cinza-1;
+    margin: 0;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.carrinho{
+    background-color: $cinza-1;
+    margin: 0;
+    color: $preto;
+    text-align: center;
+    border-radius: 5%;
+}

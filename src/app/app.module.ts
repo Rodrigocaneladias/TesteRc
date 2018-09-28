@@ -8,7 +8,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SobreComponent } from './sobre/sobre.component';
-import { HomeComponent } from './home/home.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
+import { MenuCatalogoComponent } from './catalogo/menu-catalogo/menu-catalogo.component';
+import { FarmaceuticoComponent } from './catalogo/menu-catalogo/farmaceutico/farmaceutico.component';
+import { CosmeticoComponent } from './catalogo/menu-catalogo/cosmetico/cosmetico.component';
+import { QuimicaComponent } from './catalogo/menu-catalogo/quimica/quimica.component';
+import { AlimenticiaComponent } from './catalogo/menu-catalogo/alimenticia/alimenticia.component';
+import { CarrinhoComponent } from './catalogo/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     FooterComponent,
     SobreComponent,
-    HomeComponent
+    CatalogoComponent,
+    MenuCatalogoComponent,
+    FarmaceuticoComponent,
+    CosmeticoComponent,
+    QuimicaComponent,
+    AlimenticiaComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
