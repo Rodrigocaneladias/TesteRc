@@ -12,4 +12,8 @@ export class CarrinhoComponent implements OnInit {
   ngOnInit() {
   }
 
+  emitir(){
+    
+  }
+
 }

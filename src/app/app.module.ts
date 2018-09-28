@@ -15,6 +15,8 @@ import { CosmeticoComponent } from './catalogo/menu-catalogo/cosmetico/cosmetico
 import { QuimicaComponent } from './catalogo/menu-catalogo/quimica/quimica.component';
 import { AlimenticiaComponent } from './catalogo/menu-catalogo/alimenticia/alimenticia.component';
 import { CarrinhoComponent } from './catalogo/carrinho/carrinho.component';
+import { ProdutoComponent } from './catalogo/lista-produtos/produto/produto.component';
+import { ListaProdutosComponent } from './catalogo/lista-produtos/lista-produtos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { CarrinhoComponent } from './catalogo/carrinho/carrinho.component';
     CosmeticoComponent,
     QuimicaComponent,
     AlimenticiaComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    ProdutoComponent,
+    ListaProdutosComponent
   ],
   imports: [
     BrowserModule,
