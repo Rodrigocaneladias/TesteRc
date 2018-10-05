@@ -1,8 +1,8 @@
 <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
-  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkD6zFWAthNnmfxcfDfUt8eVUnLRLz84sobgisYWOeMPApeUID" alt="Card image cap">
+  <img class="card-img-top" [src]="produto.imagePath" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">{{produto.nome}}</h5>
+    <p class="card-text"></p>
   </div>
 </div>
 
@@ -11,18 +11,18 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Produto X</h5>
+          <h5 class="modal-title">{{produto.nome}}</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>    
         <div class="modal-body text-center">
-            <img class="card-img-top" style="width: 50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkD6zFWAthNnmfxcfDfUt8eVUnLRLz84sobgisYWOeMPApeUID" alt="Card image cap">
-            <p>Modal body text goes here.</p>
+            <img class="card-img-top" style="width: 50%" [src]="produto.imagePath" alt="Card image cap">
+            <p>{{produto.descricao}}</p>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" (click)="emitAddEvent()" class="btn btn-primary">Orçar</button>
+            <button type="button" (click)="emitAddEvent(produto)" class="btn btn-primary">Orçar</button>
         </div>
     </div>
   </div>

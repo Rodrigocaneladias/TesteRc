@@ -12,7 +12,7 @@ export class CarrinhoComponent implements OnInit {
   constructor(private globalEvents: GlobalEvents) { }
 
   ngOnInit() {
-    this.globalEvents.addItem.subscribe(()=> console.log("teste 2 "));
+    this.globalEvents.addItem.subscribe((prod)=> console.log("-------->", prod));
   }
     
 }

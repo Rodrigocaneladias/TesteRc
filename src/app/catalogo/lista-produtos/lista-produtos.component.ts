@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Produto } from './produto.model';
 @Component({
   selector: 'rc-lista-produtos',
   templateUrl: './lista-produtos.component.html',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaProdutosComponent implements OnInit {
 
+  @Input() produtos: Produto[];
+  
   constructor() { }
 
   ngOnInit() {

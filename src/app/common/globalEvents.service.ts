@@ -1,11 +1,12 @@
 import { EventEmitter, Output } from "@angular/core";
+import { Produto } from '../catalogo/lista-produtos/produto.model'
 
 export class GlobalEvents{
-    @Output() addItem = new EventEmitter();
+    @Output() addItem = new EventEmitter<Produto>();
 
     constructor(){};
 
-    emitAdd(){
-        return this.addItem.emit();
+    emitAdd(produto: Produto){
+        return this.addItem.emit(produto);
     }
 }
