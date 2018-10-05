@@ -1,20 +1,17 @@
 import { Component, OnInit, EventEmitter, Output} from '@angular/core';
-
+import { GlobalEvents } from '../../../common/globalEvents.service'
 @Component({
   selector: 'rc-produto',
   templateUrl: './produto.component.html',
   styleUrls: ['./produto.component.scss']
 })
 export class ProdutoComponent implements OnInit {
-
-  @Output() add = new EventEmitter();
-
-  constructor() { }
+  constructor(private events: GlobalEvents) { }
 
   ngOnInit() {
   }
 
   emitAddEvent(){
-    this.add.emit()
+    this.events.emitAdd()
   }
 }

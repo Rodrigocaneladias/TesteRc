@@ -1,3 +1,4 @@
+import { GlobalEvents } from './../../common/globalEvents.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,15 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './carrinho.component.html',
   styleUrls: ['./carrinho.component.scss']
 })
+
 export class CarrinhoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private globalEvents: GlobalEvents) { }
 
   ngOnInit() {
+    this.globalEvents.addItem.subscribe(()=> console.log("teste 2 "));
   }
-
-  emitir(){
     
-  }
-
 }

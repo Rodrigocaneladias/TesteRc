@@ -17,6 +17,8 @@ import { AlimenticiaComponent } from './catalogo/menu-catalogo/alimenticia/alime
 import { CarrinhoComponent } from './catalogo/carrinho/carrinho.component';
 import { ProdutoComponent } from './catalogo/lista-produtos/produto/produto.component';
 import { ListaProdutosComponent } from './catalogo/lista-produtos/lista-produtos.component';
+import { GlobalEvents } from './common/globalEvents.service';
+import { ItemCartListComponent } from './catalogo/carrinho/item-cart-list/item-cart-list.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,16 @@ import { ListaProdutosComponent } from './catalogo/lista-produtos/lista-produtos
     AlimenticiaComponent,
     CarrinhoComponent,
     ProdutoComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
+    ItemCartListComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    GlobalEvents
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
