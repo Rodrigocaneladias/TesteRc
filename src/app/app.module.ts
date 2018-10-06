@@ -19,6 +19,8 @@ import { ProdutoComponent } from './catalogo/lista-produtos/produto/produto.comp
 import { ListaProdutosComponent } from './catalogo/lista-produtos/lista-produtos.component';
 import { GlobalEvents } from './common/globalEvents.service';
 import { ItemCartListComponent } from './catalogo/carrinho/item-cart-list/item-cart-list.component';
+import { OrcamentoService } from './catalogo/carrinho/orcamento.service';
+import { OrcamentoComponent } from './orcamento/orcamento.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +37,16 @@ import { ItemCartListComponent } from './catalogo/carrinho/item-cart-list/item-c
     CarrinhoComponent,
     ProdutoComponent,
     ListaProdutosComponent,
-    ItemCartListComponent
+    ItemCartListComponent,
+    OrcamentoComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
-    GlobalEvents
+    GlobalEvents,
+    OrcamentoService
   ],
   bootstrap: [AppComponent]
 })

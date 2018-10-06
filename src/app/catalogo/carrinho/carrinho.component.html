@@ -1,5 +1,13 @@
 <h4>Orçamento</h4>
 <hr>
 <div class="container">
-  <rc-item-cart-list></rc-item-cart-list>
+  <rc-item-cart-list *ngFor="let produto of produtos"  [produto]="produto"></rc-item-cart-list>
+
+  <div class="footer">
+    <hr>
+    <div  class="buttons">
+      <button type="button" class="btn btn-danger excluir" (click)="limpar()">Limpar</button>
+      <button type="button" class="btn btn-success finalizar" [routerLink]="['/orcamento']">Finalizar</button>
+    </div>
+  </div>
 </div>

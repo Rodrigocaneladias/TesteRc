@@ -11,8 +11,8 @@ export class QuimicaComponent implements OnInit {
   produtos: Produto[] = [
     {
       id:'al',
-      nome: 'teste alimenticia',
-      descricao: 'descricao alimenticia',
+      nome: 'teste quimica',
+      descricao: 'descricao quimica',
       imagePath: 'https://a2.vnda.com.br/370x370/invictaonline/2018/02/15/101528081808-pote-de-vidro-liso-2-5l-vermelho-velvet-1117.jpg',
       quantidade: 0
     },

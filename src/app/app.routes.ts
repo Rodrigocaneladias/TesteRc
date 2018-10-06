@@ -6,6 +6,7 @@ import { CosmeticoComponent } from './catalogo/menu-catalogo/cosmetico/cosmetico
 import { QuimicaComponent } from './catalogo/menu-catalogo/quimica/quimica.component';
 import { AlimenticiaComponent } from './catalogo/menu-catalogo/alimenticia/alimenticia.component';
 import { FarmaceuticoComponent } from './catalogo/menu-catalogo/farmaceutico/farmaceutico.component';
+import { OrcamentoComponent } from './orcamento/orcamento.component';
 
 export const ROUTES: Routes = [
     {path: "", component:  SobreComponent},
@@ -18,5 +19,7 @@ export const ROUTES: Routes = [
             {path: "quimica", component: QuimicaComponent}, 
             {path: "cosmetica", component: CosmeticoComponent}
         ]
-    }
+    },
+    {path: "orcamento", component:  OrcamentoComponent},
+
 ]
