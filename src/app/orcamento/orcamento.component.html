@@ -3,5 +3,48 @@
         <div class="row">
             <h1>Orçamento</h1>
         </div>
+        <form [formGroup]='orderForm' novalidate>
+            <div class="row">
+                <div class='col-xs-12 col-sm-6'>
+                    <p class='lead'>Seus Dados:</p>
+                    <div class="row">
+                            <div class='col-xs-12 col-sm-12'>
+                                <rc-input-text errorMessage="Campo obrigatório com 5 caracteres" label="Nome">
+                                        <input formControlName="name" class="form-control" placeholder="Nome">
+                                </rc-input-text>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-xs-12 col-sm-12'>
+                                <rc-input-text errorMessage="Email Invalido" label="Email">
+                                        <input formControlName="email" class="form-control" placeholder="Email">
+                                </rc-input-text>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-xs-12 col-sm-12'>
+                                <rc-input-text errorMessage="Telefone invalido" label="Telefone">
+                                    <input formControlName="telefone" class="form-control" placeholder="Telefone">
+                                </rc-input-text>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-xs-12 col-sm-12'>
+                                <textarea formControlName="observacoes" class="form-control" placeholder="Observações"></textarea>
+                            </div>
+                        </div>
+                </div>
+                <div class='col-xs-12 col-sm-6'>
+                <p class='lead'>Lista de itens:</p>
+                    <rc-item-cart-list *ngFor="let produto of produtos" [produto]="produto" ></rc-item-cart-list>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+        <div class="col-xs-12">
+            <button (click)="putOrcamento()"  class="btn btn-success pull-right"  ><i class="fa fa-credit-card"></i> Concluir
+            Pedido
+            </button>
+        </div>
     </div>
 </div>

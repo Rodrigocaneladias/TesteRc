@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from "./app.routes";
 
@@ -21,6 +22,7 @@ import { GlobalEvents } from './common/globalEvents.service';
 import { ItemCartListComponent } from './catalogo/carrinho/item-cart-list/item-cart-list.component';
 import { OrcamentoService } from './catalogo/carrinho/orcamento.service';
 import { OrcamentoComponent } from './orcamento/orcamento.component';
+import { InputTextComponent } from './common/input-text/input-text.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +40,13 @@ import { OrcamentoComponent } from './orcamento/orcamento.component';
     ProdutoComponent,
     ListaProdutosComponent,
     ItemCartListComponent,
-    OrcamentoComponent
+    OrcamentoComponent,
+    InputTextComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    ReactiveFormsModule
   ],
   providers: [
     GlobalEvents,
